@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05 - 입력</title>
+</head>
+<body>
+
+    <!-- form 태그 내부의 사용자 입력값을 묶어서 서버에 전송하는 영역 -->
+    <form method="POST">
+        <ol>
+            <li>
+                <p>일반 문자열을 입력받아서 전송</p>
+                <input type="text" name="name" value="미리 입력된 값" autofocus>
+               
+            </li>
+            <li>
+                <p>화면에 노출되지 않는 형식의 텍스트</p>
+                <input type="password" name="PW"  placeholder="비밀번호를 입력하세요" required>
+            </li>
+            <li>
+                <p>입력형식을 숫자로 제한하는 입력필드</p>
+                <input type="number" name="age">
+            </li>
+            <li>
+                <p>중복 선택이 가능한 입력 유형</p>
+                <input type="checkbox" name="color" value="red">빨강
+                <input type="checkbox" name="color" value="green">초록
+                <input type="checkbox" name="color" value="blue">파랑
+            </li>
+            <li>
+                <p>같은 이름에서 하나만 선택 가능한 유형</p>
+                <input type="radio" name="adult" value="false">미성년자
+                <input type="radio" name="adult" value="true">성인
+            </li>
+            <li>
+                <p>날짜 형식을 입력받는 type</p>
+                <input type="date" name="birth">
+            </li>
+            <li>
+                <p>form 내부의 입력 요소를 대상 페이지에게 전송</p>
+                <input type="submit" value="제출1">
+                <button>제출2</button>
+                <!-- button은 단독으로는 기능이 없지만 form태그 내부에서는 submit의 역할을 갖는다 -->
+                <input type="button" value="제출안됨">
+                <input type="reset" value="입력된 값 초기화">
+            </li>
+        </ol>
+    </form>
+
+    <button>그냥 버튼</button>
+    
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <ol>
+            <li>
+                <p>제시된 옵션 중 하나 선택하기</p>
+                <select name="phoneNumber1">
+                    <option>010</option>
+                    <option>011</option>
+                    <option>016</option>
+                    <option>017</option>
+                    <option>019</option>
+                </select>
+                -
+                <input type="text" name="phoneNumber2" size="4">
+                -
+                <input type="text" name="phoneNumber3" size="4">
+            </li>
+            <li>
+                <p>여러 줄의 텍스트를 전송하고자 할 때</p>
+                <textarea name="comment" 
+                placeholder="여기에 의견을 작성하세요" 
+                cols="40" rows="5"      
+                style="resize: none"></textarea>
+            </li>
+        </ol>
+        <!-- submit 버튼 대신 이미지를 활용할 때 -->
+        <input type="image" src="button.jpg" width="100px">
+    </form>
+
+    <ul>
+        <li>
+            <p>fieldset : 글상자를 만든다</p>
+            <fieldset>
+                <h3>fieldset</h3>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset>
+                <legend>다음 내용을 잘 읽고 설문에 응답하세요</legend>
+                <label><input type="radio" name="question" value="5">매우 그렇다</label>
+
+                <input type="radio" name="question" value="4" id="radio4">
+                <label for="radio4">그렇다</label>
+                <!-- label로 묶으면 글자를 클릭해도 체크박스가 체크된다 -->
+
+                <input type="radio" name="question" value="3">보통이다
+
+                <input type="radio" name="question" value="2">그렇지 않다
+
+                <input type="radio" name="question" value="1">매우 그렇지 않다
+            </fieldset>
+        </li>
+    </ul>
+
+    <form method="GET" action="http://search.naver.com/search.naver">
+        <h2>NAVER 검색</h2>
+        <!--
+            method : form 내부의 데이터를 어떤 방식으로 대상에게 전송할 것인가?
+            - GET : 사용자 입력 파라미터를 주소창을 통해서 전송한다(default)
+            - POST : HTTP Header를 통해서 전송한다(주소창이 아니다)
+
+            action : 데이터를 제출할 대상 페이지를 지정한다
+        -->
+        <p><input type="search" name="query" placeholder="검색어" required></p>
+        <p><input type="submit" value="NAVER 검색"></p>      
+    </form>
+    
+    <form action="http://www.youtube.com/results">
+        <h2>YouTUBE 검색</h2>
+        <p><input type="search" name="search_query" placeholder="검색어" required></p>
+        <p><button>YouTUBE 검색</button></p>
+    </form>
+
+    <form action="http://www.google.com/search">
+        <h2>Google 검색</h2>
+        <p><input type="search" name="q" placeholder="검색어" required></p>
+        <p><button>Google 검색</button></p>
+    </form>
+</body>
+</html>

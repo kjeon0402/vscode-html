@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        border : 테두리, 두께 유형 색상
+    -->
+    <div style="border: 1px solid black;
+                width: 350px;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+                <!--
+                    justify-content: flex-start, center, flex-end, space-between
+                    flex-start : 축의 시작부분(가로 정렬이면 왼쪽)
+                    flex-end : 축의 끝부분(가로 정렬이면 오른족)
+                    space-between : 일정 간격을 사이에 두고 정렬(양쪽 정렬)
+                -->
+
+        <div style="width: 100px; height: 100px; background-color: red;"></div>
+        <div style="width: 100px; height: 100px; background-color: green;"></div>
+        <div style="width: 100px; height: 100px; background-color: blue;"></div>
+
+    </div>
+
+    <div style="border: 1px solid black;
+                width: 350px;
+                height: 350px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;">
+
+        <div style="width: 100px; height: 100px; background-color: red;"></div>
+        <div style="width: 100px; height: 100px; background-color: green;"></div>
+        <div style="width: 100px; height: 100px; background-color: blue;"></div>
+
+    </div>
+
+    <div style="border: 1px solid black; width: 350px; height: 350px;">
+        <div style="background-color: red; width: 100px; height: 100px; float: right;"></div>
+        <!-- float : left or right, 자신을 부모 요소 기준으로 좌우 정렬할 때-->
+    </div>
+
+    <div style="border: 5px solid black; width: 350px; height: 350px;
+                display: flex;">
+        <!-- img -->
+        <div>
+            <img src="http://221.164.9.222/img/danbi.jpg" width="175px">
+        </div>
+        <!-- text -->
+        <div>
+            단비는 아따아따 애니메이션의 캐릭터이다. <br>단비꺼야 으앙~ 이라는 대사가 유명하다.
+        </div>
+    </div>
+    <!-- 
+        바깥쪽 박스에 display: flex를 부여하고
+        flex박스 안쪽에 block 요소를 배치하면 수평으로 요소가 배치된다
+        (flex가 아닌 경우에는 기본 수직으로 배치된다)
+    -->
+    
+</body>
+</html>
