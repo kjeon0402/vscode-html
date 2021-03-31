@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07.html</title>
+    <style>
+        /*
+            css selector(선택자) : 원하는 요소 혹은 요소들을 선택하는 구문
+            선택자 { 속성: 값; }
+
+            - 전체 선택자 : *
+            - 태그 선택자 : 태그
+            - 아이디 선택자 : #아이디
+            - 클래스 선택자 : .클래스
+            - 후손 선택자 : 선택자 선택자       (몇 대 이후의 후손이든 상관 없다)
+            - 자손 선택자 : 선택자 > 선택자     (직계 자손, 직속 하위의 요소만)
+            - 선택자1 + 선택자2 : 바로 뒤에 위치하는 선택자를 선택
+            - 선택자1 ~ 선택자2 : 뒤에 위치하는 모든 선택자를 선택           
+        */
+        * {
+            color: red;
+            user-select: none;
+        }
+        input[type="text"] {
+            background-color: yellow;
+        }
+        input[type="file"] {
+            color: black;
+        }
+        input[type="date"], input[type="button"] {
+            color: blue;
+            font-weight: bold;
+        }
+        img[src$="png"] {
+            border: solid black;
+        }
+        img[src$="jpg"] {
+            border: dashed red;
+        }
+        img[width^="2"] {
+            border: dotted blue;
+        }
+        h2 ~ h3 {
+            color: green;
+        }
+        h2 + h3 {
+            color: blue;
+        }
+
+        #h31:hover {
+            color: chocolate;
+        }
+        #h32:active {
+            color: silver;
+        }
+        input:focus {
+            background-color: skyblue;
+        }
+        input:enabled {
+            border: 0;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+        }
+        input:disabled {
+            border: 0;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+
+    아무글이나 써도...
+    <div>div</div>
+    <span>span</span>
+    <h1>h1</h1>
+    <input type="text">
+    <input type="button" value="확인">
+    <input type="date">
+    <input type="file">
+
+    <div>
+        <img src="http://221.164.9.222/img/dora.png" width="150px">
+    </div>
+    <div>
+        <img src="http://221.164.9.222/img/danbi.jpg" width="150px">
+    </div>
+    <div>
+        <img src="http://221.164.9.222/img/iu.jpg" width="250px">
+    </div>
+
+    <hr>
+
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <h3>h3</h3>
+    <h3>h3</h3>
+
+    <!-- 
+        - 반응 선택자
+        :hover - 마우스를 올리면 속성을 적용
+        :active - 마우스를 클릭하고 있으면 속성을 적용
+        :focus - 초점이 맞추어진 상태이면(커서가 위치하고 있으면) 속성을 적용
+        :enabled - 활성화된 요소이면 속성 적용
+        :disabled - 비활성화된 요소이면 속성 적용
+        :checked - 체크된 상태이면 속성 적용
+    -->
+    <h3 id="h31">마우스를 올려보세요</h3>
+    <h3 id="h32">마우스로 클릭해보세요</h3>
+    <input>
+    <input>
+    <input disabled="disabled">
+    
+</body>
+</html>

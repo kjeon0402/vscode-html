@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            HTML요소의 각각에 style속성을 부여하는 대신
+            태그, ID, class, 기타 속성으로 HTML요소를 선택하여 
+            공통으로 style속성을 부요하는 영역
+        */
+        div {
+            /* 모든 div 태그에 대해서 공통으로 적용하는 속성 */
+            margin: 20px;
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        div.box {
+            /* div 태그 중에서도, 클래스 이름이 box인 요소에 대해서만 적용하는 속성 */
+            /* class : 여러 HTML요소가 공통으로 가질 수 있는 이름(type) */
+            text-align: center;     /* 글자를 좌우 기준 가운데 정렬 */
+            line-height: 100px;     /* 한 줄의 높이를 지정(100px 기준 가운데에 글자가 위치) */
+            font-size: 20pt;        /* 글자 크기 */
+            font-weight: bold;      /* 글자 굵기 */
+        }
+        .box {
+            /* 태그 종류에 상관없이, class이름이 box인 모든 요소에 대해서 적용하는 속성 */
+            border-radius: 50%;     /* 테두리를 둥글게 */
+        }
+        #red {
+            color: red;
+        }
+        #green {
+            color: green;
+        }
+        div#blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        HTML은 웹 문서의 기본 뼈대를 구성하는 목적
+        STYLE속성은 웹 문서의 각 요소에 대해서 외형적인 요소를 제어하는 목적
+    -->
+    <div style="border: 2px solid black;               
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                background-color: salmon;">1</div>
+
+    <div style="border: 2px solid black;                
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                background-color: gold;">2</div>
+
+    <div style="border: 2px solid black;               
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                background-color: skyblue;">3</div>
+    <hr>
+
+    <div id="red" class="box">4</div>
+    <div id="green" class="box">5</div>
+    <div id="blue" class="box">6</div>
+    <!--
+        id는 고유한 이름을 지니도록 설정한다(중복되면 안된다)
+        class는 서로 다른 요소 간에도 같은 클래스르 가지게 한다
+    -->
+
+    <button class="box">버튼</button>
+    
+</body>
+</html>

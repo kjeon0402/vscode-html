@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            padding: 0;         /* px이나 %로 수치를 작성하는 항목에서 0을 작성하면 단위를 생략할 수 있다. */
+            margin: 0;
+        }
+        div {
+            width: 300px;
+            border: 2px dashed red;
+            margin: 20px 10px 5px 1px;      /* top - right - bottom - left */
+            margin: 20px 10px;              /* top & bottom - right & left */
+            margin: 20px                    /* 전체 */
+            /* 같은 속성에 대해서 중첩되게 적용하면 마지막에 작성된 속성이 적용된다 */
+        }
+    </style>
+</head>
+<body>
+
+    <div style="text-align: left;">왼쪽 정렬</div>
+    <div style="text-align: center;">가운데 정렬</div>
+    <div style="text-align: right;">오른쪽 정렬</div>
+
+    <div style="text-align: left;"><img src="http://221.164.9.222/img/danbi.jpg" width="50px"></div>
+    <div style="text-align: center;"><img src="http://221.164.9.222/img/danbi.jpg" width="50px"></div>
+    <div style="text-align: right;"><img src="http://221.164.9.222/img/danbi.jpg" width="50px"></div>
+    
+</body>
+</html>
