@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .wrap {
+            width: 80%;
+            border: 1px solid black;           
+        }
+        header {
+            height: 130px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header > h1 {
+            margin: 20px 0;
+            padding: 10px 5px;
+            background-color: #5457de;
+            color: white;
+        }
+        main {
+            height: 400px;
+            display: flex;  
+            margin-top: 20px;
+            margin-bottom: 20px;     
+        }
+        main > .menu {
+            width: 20%;
+            background-color: #3b3b3b;
+            color: white;        
+        }
+        .menu > ul {
+            /* 기본 모양에서 왼쪽에 점을 찍어야 해서 padding-left를 가진다 */
+            list-style: none;
+            padding: 0;
+        }
+        .menu > ul > li {
+            padding: 10px;
+        }
+        .menu > ul > li:hover {
+            cursor: pointer;
+            background-color: #5457de;
+        }
+        main > .content {
+            width: 80%;
+            margin-left: 40px;
+            margin-right: 30px;           
+        }
+        .content > h1 {
+            margin: 30px 0;
+        }
+        .content > .inner {
+            font-weight: bold;
+            font-size: 14pt;
+            font-family: 'Consolas';
+        }
+        .bottom {
+            display: flex;
+            justify-content: center;
+        }
+        footer {
+            width: 90%;
+            /* margin: auto; */
+            margin-top: 20px;
+            padding: 20px 0;           
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <h1>LOGO</h1>
+        </header>       
+        <main>
+            <div class="menu">
+                <ul>
+                    <li>Menu-1</li>
+                    <li>Menu-2</li>
+                    <li>Menu-3</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Hello world!!</h1>
+                <div class="inner">
+                    Ea veniam laboris minim tempor eiusmod elit. Eu excepteur culpa laboris laborum voluptate sunt est veniam est. Proident mollit culpa aute commodo minim anim cillum proident nisi sint do.
+    
+    Eiusmod elit consectetur id irure tempor. <br><br> Labore velit duis reprehenderit consectetur ut duis ad mollit voluptate minim excepteur aute aute magna. Cillum veniam excepteur adipisicing duis cupidatat excepteur. Nisi commodo ut dolore labore id officia mollit pariatur anim ut ea eu sit. Exercitation cupidatat commodo cupidatat dolor nulla sit nulla aliqua nostrud aliquip irure sint adipisicing. Adipisicing dolore nisi deserunt ea veniam magna sunt proident in dolor.
+                </div>
+    
+            </div>
+        </main>
+        <div class="bottom">
+            <footer>
+                copy
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

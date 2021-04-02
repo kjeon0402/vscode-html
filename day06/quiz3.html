@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-family: 'Consolas';
+        }
+        .wrap {
+            width: 1037px;
+        }
+        header {
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        .top-menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .top-menu > ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .top-menu > ul > li {
+            width: 100px;
+            list-style: none;
+            cursor: pointer;
+            border: 1px solid black;
+            text-align: center;
+        }
+        header > h1 {
+            margin: 0;
+            padding-left: 15px;
+        }
+        header > h2 {
+            margin-top: 5px;
+            margin-bottom: 30px;
+            padding-left: 15px;
+        }
+        .bottom-menu > ul {
+            margin: 0;
+            display: flex;
+            padding: 0;
+        }
+        .bottom-menu > ul > li {
+            width: 200px;
+            list-style: none;
+            cursor: pointer;
+            border: 1px solid black;
+            padding-left: 5px;
+        }
+        .wrap {
+            display: flex;
+            height: auto;
+        }       
+        aside {
+            width: 20%;
+        }
+        aside > ul {
+            padding: 0;
+        }
+        aside > ul > li {
+            list-style: none;
+            border: 2px double darkgreen;
+            padding: 10px;
+            cursor: pointer;
+        }
+        aside > ul > li > .img {
+            width: 39px;
+            height: 39px;
+            background-image: url(pikachu.png);
+            background-size: 39px;
+            float: left;
+            margin: 0 10px;           
+        }
+        aside > ul > li > p {
+            margin: 0;
+            font-weight: bold;
+        }
+        .content {
+            width: 80%;
+        }
+        .content > article {
+            width: auto;
+            border: 1px solid crimson;
+            margin: 15px;
+            margin-right: 0;
+            font-weight: bold;
+            padding: 30px;
+        }
+        .content > article > p {
+            margin: 0;
+            font-weight: normal;
+        }
+        footer {
+            border: 1px solid darkgreen;
+            text-align: center;
+        }
+        footer > .p1 {
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        footer > .p2 {
+            font-style: italic;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="root">
+        <header>
+            <div class="top-menu">
+                <ul>
+                    <li>main_Nav1</li>
+                    <li>main_Nav2</li>
+                    <li>main_Nav3</li>
+                    <li>main_Nav4</li>
+                    <li>main_Nav5</li>
+                </ul>
+            </div>
+            <h1>Title</h1>
+            <h2>SubTitle</h2>
+            <div class="bottom-menu">
+                <ul>
+                    <li>Nav1</li>
+                    <li>Nav2</li>
+                    <li>Nav3</li>
+                    <li>Nav4</li>
+                    <li>Nav5</li>
+                </ul>
+            </div>
+        </header>
+        <div class="wrap">
+            <aside>
+                <ul>
+                    <li><div class="img"></div><p>goods1</p>description</li>
+                    <li><div class="img"></div><p>goods2</p>description</li>
+                    <li><div class="img"></div><p>goods3</p>description</li>
+                    <li><div class="img"></div><p>goods4</p>description</li>                    
+                        
+                </ul>
+            </aside>
+            <div class="content">
+                <article>Main Acticle1
+                    <p>Commodo qui proident proident incididunt. Non deserunt adipisicing sunt id. Aliquip occaecat id et in laborum do ex. Do id eu nulla ad laboris ad minim non adipisicing nisi et. Nostrud sit elit ut proident aliquip ipsum.</p>
+                </article>
+                <article>Main Acticle2
+                    <p>Commodo qui proident proident incididunt. Non deserunt adipisicing sunt id. Aliquip occaecat id et in laborum do ex. Do id eu nulla ad laboris ad minim non adipisicing nisi et. Nostrud sit elit ut proident aliquip ipsum.</p>
+                </article>
+                <article>Main Acticle3
+                    <p>Commodo qui proident proident incididunt. Non deserunt adipisicing sunt id. Aliquip occaecat id et in laborum do ex. Do id eu nulla ad laboris ad minim non adipisicing nisi et. Nostrud sit elit ut proident aliquip ipsum.</p>
+                </article>
+            </div>
+        </div>
+        <footer>
+            <p class="p1">Corperation Name</p>
+            <p class="p2">Busan, Korea</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
