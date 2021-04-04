@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            font-size: 20pt;
+            border: 1px solid grey;
+        }
+        .header {
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+        }
+        .top-banner {
+            background-color: orange;
+            height: 250px;
+        }
+        .top-nav {
+            background-color: yellow;
+            height: 50px;
+        }
+        .search {
+            background-color: green;
+            height: 50px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .wrap {
+            background-color: blue;
+            height: 500px;
+            display: flex;
+        }
+        .left-nav {
+            background-color: navy;
+            width: 20%;
+            color: white;
+        }
+        .content {
+            background-color: purple;
+            width: 80%;
+            color: white;
+        }
+        .menu > ul {
+            list-style: none;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>영역 배치하기 (cafe.naver.com/???)</h1>
+    <hr>
+
+    <div class="header">
+        <div class="logo">NAVER</div>
+        <div class="menu">
+            <ul>
+                <li><a href="">카페홈</a></li>
+                <li><a href="">가입카페</a></li>
+                <li><a href="">새글</a></li>
+                <li><a href="">내소식</a></li>
+                <li><a href="">채팅</a></li>
+                <li><a href="">로그인</a></li>
+                <li><a href="">▦</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="top-banner">
+        <img src="https://file.mk.co.kr/meet/neds/2018/06/image_readtop_2018_403054_15300003613365886.jpg">
+    </div>
+    <div class="top-nav">3</div>
+    <div class="search">
+        <form>
+            <input><button>검색</button>
+        </form>
+    </div>
+    <div class="wrap">
+        <div class="left-nav">6</div>
+        <div class="content">7</div>
+    </div>
+    
+</body>
+</html>
